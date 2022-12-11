@@ -2,13 +2,6 @@ import {winScreen} from './package.js';
 var body = document.body;
 var block = document.querySelectorAll('.block');
 var game = document.querySelector('#game');
-/*
-setInterval(function(){
-    if(game.childElementCount==0){
-        document.write('')
-    }
-}, 100)
-*/
 var winStatus = new Promise(function(resolve){
     setInterval(function(){
         if(game.childElementCount==0){
