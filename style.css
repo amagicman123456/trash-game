@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: lightblue;
+    transform-style: preserve-3d;
+    perspective: 15px;
+}
+#game{
+    width: 500px;
+    height: 700px;
+    background: #111;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    transform-style: preserve-3d;
+    transform: rotateX(80deg);
+}
+.block{
+    position: relative;
+    background: blue;
+    width: 100px;
+    height: 20px;
+    top: 0px;
+    left: 0px;
+    transform-style: preserve-3d;
+    transform: translateY(50px);
+    animation: forward 5s infinite linear;
+    cursor: pointer;
+}
+@keyframes forward{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 700px;
+    }
+}
+#front-block{
+    width: 50px;
+    height: 100px;
+    background: blue;
+    transform-style: preserve-3d;
+    transform: rotateX(90deg) translateZ(100px);
+}
+.added_p{
+    align: center;
+}
